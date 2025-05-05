@@ -1,0 +1,61 @@
+/*EHKÄ vanhempia tyylejä*/
+/*Validointimuotoilut*/
+input:invalid {
+	border-color: red;
+}
+
+input, input:valid {
+	border-color: #8c8c8c;
+}
+
+.pakollinenMerkki {
+	color: red;
+	font-size: 22px;
+}
+
+/*Lomakkeiden virheviestit*/
+.has-error .form-control {
+	border-color: #e60000;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.help-block {
+	display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #e60000;
+}
+
+/**/
+.flex-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-item-left {
+	padding: 10px;
+	flex: 50%;
+}
+
+.flex-item-right {
+	padding: 10px;
+	flex: 50%;
+}
+
+@media only screen and (max-width: 800px) {
+	.flex-container {
+		flex-direction: column;
+	}
+}
+
+@keyframes alerts {
+	0% {opacity: 1;}
+	80% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+.animation {
+	animation-name: alerts;
+	animation-duration: 5s;
+}
